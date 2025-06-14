@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interior</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Interio/assets/favicon.png" type="image/x-icon">
     <!-- tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisyUI CDN -->
@@ -13,17 +15,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             font-family: "Azeret Mono", monospace;
         }
     </style>
+    
 </head>
 <body>
     <!-- header section  -->
-    <Header>
-        <h1 class="text-blue-700">hello, i am Shanto Roy!</h1>
+    <Header class="lg:px-32 md:px-8 max-sm:px-5 lg:pb-24 pb-16 bg-gradient-to-b from-[#f8f7f7] to-[#ffffff]">
+        <nav class="navbar">
+            <div class="navbar-start">
+                <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-[#ABEF5F] p-1.5 rounded-full"></i>
+                <a class="btn btn-ghost text-xl pl-1">Interior</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li class="text-gray-400"><a>Services</a></li>
+                    <li class="text-gray-400"><a>Portfolio</a></li>
+                    <li class="text-gray-400"><a>Blogs</a></li>
+                    <li class="text-gray-400"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="max-sm:hidden flex space-x-4">
+                    <div class="btn btn-ghost btn-circle text-gray-400 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
+                    </div>
+                    <div class="btn btn-ghost btn-circle text-gray-400 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                    </div>
+                    <div class="btn rounded-full bg-[#ABEF5F]"> 
+                        <p class="text-black">Book Consult</p>
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black p-1.5 rounded-full"></i>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <!-- dropdown-content -->
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-1 w-52 shadow -ml-8">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner content  -->
+        <div class="text-center space-y-6">
+            <img src="Interio/assets/banner.png" alt="" class="mx-auto">
+            <h1 class="lg:text-6xl md:text-4xl max-sm:text-3xl font-bold">A barn house of this design has a striking appearance</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="bg-[#acef5fb6] flex rounded-full py-3 px-6 max-sm:px-25 items-center mx-auto space-x-2">
+                <p>View Details</p>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-black bg-[#ABEF5F] p-1.5 rounded-full"></i>
+            </button>
+        </div>
     </Header>
+
+
+
     <!-- main section  -->
     <main></main>
     <!-- footer section  -->
